@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecovative: Molecular Mycotechnology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            line-height: 1.6;
+            color: #00aa00;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #001100;
+            background-image: 
+                linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        h1, h2, h3 {
+            color: #00ff00;
+        }
+        .quote {
+            font-style: italic;
+            color: #008800;
+            border-left: 3px solid #00ff00;
+            padding-left: 10px;
+        }
+        .growth-area {
+            background-color: rgba(0, 51, 0, 0.7);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .metric {
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .mycelium-graphic {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+        .mycelium-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 10s linear alternate infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 1000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        .cta {
+            display: inline-block;
+            background-color: #003300;
+            color: #00ff00;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-top: 20px;
+            border: 1px solid #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ecovative: Molecular Mycotechnology</h1>
+    
+    <svg class="mycelium-graphic" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="mycelium-path" d="M10,100 Q50,50 100,100 T200,100 T300,100 T400,100" fill="none" stroke="#00ff00" stroke-width="1"/>
+        <path class="mycelium-path" d="M10,120 Q50,170 100,120 T200,120 T300,120 T400,120" fill="none" stroke="#00ff00" stroke-width="1"/>
+        <path class="mycelium-path" d="M50,50 L50,150 Q100,200 150,150 L150,50 Q200,0 250,50 L250,150 Q300,200 350,150 L350,50" fill="none" stroke="#00ff00" stroke-width="1"/>
+        <path class="mycelium-path" d="M0,75 Q100,25 200,75 T400,75" fill="none" stroke="#00ff00" stroke-width="1"/>
+        <path class="mycelium-path" d="M0,125 Q100,175 200,125 T400,125" fill="none" stroke="#00ff00" stroke-width="1"/>
+        <circle cx="100" cy="100" r="5" fill="#00ff00">
+            <animate attributeName="r" values="2;5;2" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="200" cy="100" r="5" fill="#00ff00">
+            <animate attributeName="r" values="2;5;2" dur="4s" begin="1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="300" cy="100" r="5" fill="#00ff00">
+            <animate attributeName="r" values="2;5;2" dur="4s" begin="2s" repeatCount="indefinite"/>
+        </circle>
+    </svg>
+    
+    <p><strong>Our Endgame: Ubiquitous molecular manufacturing. Mycelium that builds anything.</strong></p>
+
+    <h2>The Path:</h2>
+    <ol>
+        <li>Master mycelium growth ✓</li>
+        <li>Develop market-leading Bacon, Leather, and Packaging ✓</li>
+        <li>Scale production to millions of pounds ✓</li>
+        <li>Engineer precise molecular structures</li>
+        <li>Achieve atomic-level control</li>
+        <li>Rewrite the laws of manufacturing</li>
+    </ol>
+
+    <p class="quote">"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete." - Buckminster Fuller</p>
+
+    <h2>We realize this plan By GROWING:</h2>
+
+    <div class="growth-area">
+        <h3>Food</h3>
+        <p>We transform the entire food industry through mycelium technology.</p>
+        
+        <ul>
+            <li>MyBacon: The fastest-selling, highest-priced plant-based meat in the breakfast category</li>
+            <li>Whole Cut Meats: Mycelium-based chicken filets, beef steaks, and fish alternatives with authentic texture and flavor</li>
+            <li>Functional Foods: Nutrient-dense, customizable mycelium-based superfoods</li>
+            <li>Beverages: Probiotic drinks and protein shakes powered by fungi</li>
+            <li>Snacks: Mycelium-core treats offering unparalleled nutrition</li>
+        </ul>
+        
+        <p>We create a metabolic evolution, reshaping how we produce and consume food.</p>
+
+        <div class="metrics">
+            <div class="metric">
+                <div>F25 Revenue</div>
+                <div class="metric-value">$15 MM</div>
+            </div>
+            <div class="metric">
+                <div>Growth Rate (YoY)</div>
+                <div class="metric-value">1,000%</div>
+            </div>
+            <div class="metric">
+                <div>Expected Terminal Margin</div>
+                <div class="metric-value">45%+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="growth-area">
+        <h3>Fashion & Textiles: Forager</h3>
+        <p>Our AirMycelium™ platform creates a new ecosystem of sustainable, high-performance materials.</p>
+        
+        <ul>
+            <li>Leather Alternatives: Premium mycelium-based hides for high-end fashion, with customizable textures and finishes</li>
+            <li>Performance Materials: High-performance foams for sportswear and protective gear that outperform petrochemical alternatives</li>
+            <li>Technical Textiles: Innovative fabrics for outdoor and athletic wear, pushing the boundaries of what's possible</li>
+            <li>Niche Applications: Compostable earplugs for concerts and industrial use, biodegradable insulation for outdoor apparel</li>
+        </ul>
+        
+        <p>Forager drives innovation across multiple industries, from luxury fashion to high-performance gear.</p>
+
+        <div class="metrics">
+            <div class="metric">
+                <div>Partnerships</div>
+                <div class="metric-value">Leading Luxury Brands</div>
+            </div>
+            <div class="metric">
+                <div>2024 Production Capacity</div>
+                <div class="metric-value">750,000 sq ft</div>
+            </div>
+            <div class="metric">
+                <div>Expected Terminal Margin</div>
+                <div class="metric-value">60%+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="growth-area">
+        <h3>Medicine & Biotechnology</h3>
+        <p>Our mycelium platform revolutionizes food, fashion, and medicine simultaneously.</p>
+        
+        <ul>
+            <li>Functional Molecules: Our AirMycelium™ platform produces vast quantities of pure mycelium, unlocking novel compounds for functional food ingredients and pharmaceutical applications</li>
+            <li>Cellular Scaffolding: We pioneer the use of mycelium as a scaffold for growing other cell types, with peer-reviewed success in cultivating insect cells on mycelium structures</li>
+            <li>Regenerative Medicine: We develop mycelium scaffolds for bone mineralization and explore mycelium-based solutions for wound healing and tissue regeneration</li>
+        </ul>
+        
+        <p>From novel drug discovery to regenerative therapies, we unlock the healing potential of fungi at an unprecedented scale.</p>
+
+        <div class="metrics">
+            <div class="metric">
+                <div>Research Partnerships</div>
+                <div class="metric-value">Leading Institutions</div>
+            </div>
+            <div class="metric">
+                <div>Potential Applications</div>
+                <div class="metric-value">Vast & Expanding</div>
+            </div>
+            <div class="metric">
+                <div>Market Potential</div>
+                <div class="metric-value">$100B+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="growth-area">
+        <h3>Computers</h3>
+        <p>We grow neural networks, redefining the future of computing.</p>
+        
+        <ul>
+            <li>Hyphal Computing Network (HCN): Living, breathing, thinking machines powered by mycelium</li>
+            <li>Computational Density: 4 billion teraflops per cubic inch, surpassing traditional GPUs</li>
+            <li>Energy Efficiency: Our systems deliver unparalleled computing power with minimal energy consumption</li>
+            <li>Biologically-Inspired Architecture: Our computers grow, adapt, and evolve, bringing intelligence back to its biological roots</li>
+        </ul>
+        
+        <p>We cultivate the singularity, growing the future of computation.</p>
+    </div>
+
+    <p class="quote">"We are called to be architects of the future, not its victims." - Buckminster Fuller</p>
+
+    <h2>Join the Mycelial Revolution:</h2>
+    <a href="#" class="cta">PARTNER</a>
+    <a href="#" class="cta">INVEST</a>
+    <a href="#" class="cta">CREATE</a>
+</body>
+</html>
