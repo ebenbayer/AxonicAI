@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecovative: Molecular Mycotechnology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --bg-color: #2c3e50; /* Dark slate gray background */
+        --text-color: #ecf0f1; /* Light gray text */
+        --highlight-color: #3498db; /* Bright blue for highlights */
+        --section-bg-color: rgba(52, 73, 94, 0.7); /* Slightly lighter than background */
+        --grid-color: rgba(236, 240, 241, 0.1); /* Light gray grid */
+    }
+
+    body {
+        font-family: 'Roboto Mono', monospace;
+        line-height: 1.6;
+        color: var(--text-color);
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: var(--bg-color);
+        background-image: 
+            linear-gradient(var(--grid-color) 1px, transparent 1px),
+            linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+
+    h1, h2, h3, h4 {
+        color: var(--highlight-color);
+    }
+
+    .quote {
+        font-style: italic;
+        color: #bdc3c7; /* Light gray for quotes */
+        border-left: 3px solid var(--highlight-color);
+        padding-left: 10px;
+        margin: 20px 0;
+        background-color: rgba(52, 152, 219, 0.1); /* Slight blue tint */
+    }
+
+    .cta {
+        display: inline-block;
+        background-color: var(--highlight-color);
+        color: var(--bg-color);
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-right: 10px;
+        margin-top: 20px;
+        border: 1px solid var(--highlight-color);
+        transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+        background-color: var(--bg-color);
+        color: var(--highlight-color);
+    }
+
+    .growth-area {
+        background-color: var(--section-bg-color);
+        padding: 15px;
+        margin-top: 20px;
+        border: 1px solid var(--highlight-color);
+    }
+
+    .growth-area ul {
+        padding-left: 20px;
+    }
+
+    .growth-area li {
+        margin-bottom: 10px;
+    }
+
+    .mycelium-graphic {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .mycelium-path {
+        stroke: var(--highlight-color);
+        stroke-width: 1;
+        fill: none;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 10s linear alternate infinite;
+    }
+
+    @keyframes dash {
+        from {
+            stroke-dashoffset: 1000;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .food-section {
+        overflow: hidden;
+    }
+
+    .bacon-image {
+        float: right;
+        width: 40%;
+        max-width: 300px;
+        margin: 0 0 15px 15px;
+        border: 1px solid var(--highlight-color);
+    }
+
+    .footnote {
+        font-style: italic;
+        text-align: right;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #bdc3c7; /* Light gray for footnote */
+    }
+
+    .metrics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .metric {
+        flex-basis: calc(33% - 10px);
+        text-align: center;
+        margin-bottom: 10px;
+        background-color: rgba(52, 152, 219, 0.1); /* Slight blue tint */
+        padding: 10px;
+        border: 1px solid var(--highlight-color);
+    }
+
+    .metric-value {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--highlight-color);
+    }
+
+    @media (max-width: 600px) {
+        .bacon-image {
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 15px 0;
+        }
+    }
+</style>
+    
+    
+    
+    
+</head>
+<body>
+    <h1>Ecovative: Molecular Mycotechnology</h1>
+
+    <svg class="mycelium-graphic" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="mycelium-path" d="M10,100 Q50,50 100,100 T200,100 T300,100 T400,100" fill="none" stroke="#006600" stroke-width="1"/>
+        <path class="mycelium-path" d="M10,120 Q50,170 100,120 T200,120 T300,120 T400,120" fill="none" stroke="#006600" stroke-width="1"/>
+        <path class="mycelium-path" d="M50,50 L50,150 Q100,200 150,150 L150,50 Q200,0 250,50 L250,150 Q300,200 350,150 L350,50" fill="none" stroke="#006600" stroke-width="1"/>
+        <path class="mycelium-path" d="M0,75 Q100,25 200,75 T400,75" fill="none" stroke="#006600" stroke-width="1"/>
+        <path class="mycelium-path" d="M0,125 Q100,175 200,125 T400,125" fill="none" stroke="#006600" stroke-width="1"/>
+        <circle cx="100" cy="100" r="5" fill="#006600">
+            <animate attributeName="r" values="2;5;2" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="200" cy="100" r="5" fill="#006600">
+            <animate attributeName="r" values="2;5;2" dur="4s" begin="1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="300" cy="100" r="5" fill="#006600">
+            <animate attributeName="r" values="2;5;2" dur="4s" begin="2s" repeatCount="indefinite"/>
+        </circle>
+    </svg>
+
+    <h2>Our Endgame: Ubiquitous molecular manufacturing. Mycelium that builds anything.</h2>
+
+    <h3>The Path:</h3>
+    <ul>
+        <li>Master mycelium growth [✓]</li>
+        <li>Develop market-leading products [✓]</li>
+        <li>Scale production to millions of pounds [✓]</li>
+        <li>Grow increasingly valuable molecular structures []</li>
+        <li>Achieve atomic-level precision manufacturing []</li>
+        <li>Create material abundance []</li>
+    </ul>
+
+    <div class="quote">
+        "You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete." - Buckminster Fuller
+    </div>
+
+    <h2>We realize this plan By GROWING:</h2>
+
+    <div class="growth-area food-section">
+        <h3>Food</h3>
+        <img src="bacon.jpg" alt="MyBacon being cooked" class="bacon-image">
+        
+        <h4>Market Validation: MyBacon is 10x Better*</h4>
+        <ul>
+            <li><strong>Distribution:</strong> 800+ stores and growing</li>
+            <li><strong>Key Retailers:</strong> Whole Foods, Good Eggs, PCC Markets, and more</li>
+            <li><strong>Performance:</strong> Outperforms competitors' velocity by 2-3 times</li>
+            <li><strong>Q3 2024 Sales Growth:</strong> 2.6x Q2 sales</li>
+            <li><strong>Projected 2025 Revenue:</strong> $15 MM</li>
+        </ul>
+
+        <h4>Earth's Newest Global Crop: Nutritious, Delicious, Organic</h4>
+        <ul>
+            <li><strong>Whole Cut Meats:</strong> Organic, Farm-to-table, high value to the consumer</li>
+            <li><strong>Functional Foods:</strong> Nutrient-dense superfoods powered by AirMycelium</li>
+            <li><strong>Beverages:</strong> Probiotic drinks and protein shakes</li>
+            <li><strong>Snacks:</strong> Low carb, high protein, AirMycelium cookies and bars</li>
+        </ul>
+
+        <h4>Production Milestones:</h4>
+        <ul>
+            <li>Current production: Exceeding 10,000 lbs/week</li>
+            <li>Year-end target: 30,000 lbs/week</li>
+            <li>Expanding capacity with contract manufacturers representing $50 Million committed capacity</li>
+        </ul>
+
+        <h4>Market Performance:</h4>
+        <ul>
+            <li>Strongest velocities in the plant-based breakfast meat category</li>
+            <li>Outperforming both plant-based and premium pork bacon in sales velocity</li>
+            <li>Expanding to West Coast markets with frozen distribution</li>
+        </ul>
+
+        <p class="footnote">* We sell 3x as fast at 2x the price as an organic whole cut farm to table product</p>
+
+        <a href="https://www.myforestfoods.com" class="cta">EXPLORE MYFOREST FOODS</a>
+    </div>
+
+    <div class="growth-area">
+        <h3>Fashion & Textiles: Forager</h3>
+        <h4>Revolutionizing Materials:</h4>
+        <ul>
+            <li><strong>Leather Alternatives:</strong> Premium mycelium-based hides</li>
+            <li><strong>Performance Materials:</strong> High-performance foams</li>
+            <li><strong>Technical Textiles:</strong> Innovative fabrics</li>
+            <li><strong>Niche Applications:</strong> Compostable earplugs, insulation</li>
+        </ul>
+        <a href="https://www.forager.bio" class="cta">DISCOVER FORAGER</a>
+    </div>
+
+    <div class="growth-area">
+        <h3>Medicine & Biotechnology</h3>
+        <h4>Advancing Health Through Mycelium:</h4>
+        <ul>
+            <li><strong>Functional Molecules:</strong> Novel compounds</li>
+            <li><strong>Cellular Scaffolding:</strong> Growing other cell types</li>
+            <li><strong>Regenerative Medicine:</strong> Bone mineralization, wound healing</li>
+        </ul>
+        <a href="#" class="cta">LEARN MORE</a>
+    </div>
+
+    <div class="growth-area">
+        <h3>Computers</h3>
+        <h4>The Future of Biocomputing:</h4>
+        <ul>
+            <li><strong>Hyphal Computing Network (HCN):</strong> Living computers</li>
+            <li><strong>Computational Density:</strong> 4 billion teraflops/cubic inch</li>
+            <li><strong>Energy Efficiency:</strong> Minimal energy consumption</li>
+            <li><strong>Biologically-Inspired Architecture:</strong> Adaptive systems</li>
+        </ul>
+        <a href="#" class="cta">EXPLORE BIOCOMPUTE</a>
+    </div>
+
+    <div class="growth-area">
+        <h3>Scale</h3>
+        <h4>Current Capacity:</h4>
+        <ul>
+            <li>3 farms: Swersey Silos, Whitecrest Innovations Inc., and MME Ammerzoden B.V.</li>
+            <li>300,000 sq ft production area</li>
+            <li>Approaching 10,000 lbs/week of mycelium production</li>
+            <li>On track for 30-40,000 lbs/week by year-end</li>
+        </ul>
+        <h4>Contracted Future Capacity:</h4>
+        <ul>
+            <li>1,000,000 sq ft potential production area</li>
+            <li>Expressions of interest with four new farms</li>
+            <li>Representing up to $40 MM of annual incremental capacity availability</li>
+        </ul>
+        <h4>Growth Projections:</h4>
+        <ul>
+            <li>2024 Revenue Target: $17 MM (more than double 2023)</li>
+            <li>2025 Revenue Projection: $40 MM+</li>
+            <li>2029 Strategic Plan Target: $460 MM in sales</li>
+        </ul>
+    </div>
+
+    <div class="growth-area">
+        <h3>Grow.bio: Empowering Mycelium Creators</h3>
+        <p>Born from a grant by the Buckminster Fuller Foundation, Grow.bio is our initiative to democratize mycelium technology. We support artists, makers, students, and creators to grow their own mycelium creations at any scale, from home projects to large-scale installations.</p>
+        <h4>Program Highlights:</h4>
+        <ul>
+            <li>DIY kits for home-based mycelium cultivation</li>
+            <li>Educational resources and workshops</li>
+            <li>Community support for mycelium enthusiasts</li>
+            <li>Scaling guidance for larger projects</li>
+        </ul>
+        <a href="#" class="cta">DISCOVER GROW.BIO</a>
+    </div>
+
+    <div class="quote">
+        "We are called to be architects of the future, not its victims." - Buckminster Fuller
+    </div>
+
+    <h2>Join the Mycelial Revolution:</h2>
+    <a href="#" class="cta">PARTNER</a>
+    <a href="#" class="cta">INVEST</a>
+    <a href="#" class="cta">CREATE</a>
+
+</body>
+</html>
