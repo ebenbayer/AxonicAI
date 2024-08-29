@@ -5,151 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecovative: Molecular Mycotechnology</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    :root {
-        --bg-color: #2c3e50; /* Dark slate gray background */
-        --text-color: #ecf0f1; /* Light gray text */
-        --highlight-color: #3498db; /* Bright blue for highlights */
-        --section-bg-color: rgba(52, 73, 94, 0.7); /* Slightly lighter than background */
-        --grid-color: rgba(236, 240, 241, 0.1); /* Light gray grid */
-    }
 
-    body {
-        font-family: 'Roboto Mono', monospace;
-        line-height: 1.6;
-        color: var(--text-color);
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: var(--bg-color);
-        background-image: 
-            linear-gradient(var(--grid-color) 1px, transparent 1px),
-            linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-        background-size: 20px 20px;
-    }
-
-    h1, h2, h3, h4 {
-        color: var(--highlight-color);
-    }
-
-    .quote {
-        font-style: italic;
-        color: #bdc3c7; /* Light gray for quotes */
-        border-left: 3px solid var(--highlight-color);
-        padding-left: 10px;
-        margin: 20px 0;
-        background-color: rgba(52, 152, 219, 0.1); /* Slight blue tint */
-    }
-
-    .cta {
-        display: inline-block;
-        background-color: var(--highlight-color);
-        color: var(--bg-color);
-        padding: 10px 20px;
-        text-decoration: none;
-        margin-right: 10px;
-        margin-top: 20px;
-        border: 1px solid var(--highlight-color);
-        transition: all 0.3s ease;
-    }
-
-    .cta:hover {
-        background-color: var(--bg-color);
-        color: var(--highlight-color);
-    }
-
-    .growth-area {
-        background-color: var(--section-bg-color);
-        padding: 15px;
-        margin-top: 20px;
-        border: 1px solid var(--highlight-color);
-    }
-
-    .growth-area ul {
-        padding-left: 20px;
-    }
-
-    .growth-area li {
-        margin-bottom: 10px;
-    }
-
-    .mycelium-graphic {
-        width: 100%;
-        max-width: 600px;
-        margin: 20px auto;
-        display: block;
-    }
-
-    .mycelium-path {
-        stroke: var(--highlight-color);
-        stroke-width: 1;
-        fill: none;
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash 10s linear alternate infinite;
-    }
-
-    @keyframes dash {
-        from {
-            stroke-dashoffset: 1000;
-        }
-        to {
-            stroke-dashoffset: 0;
-        }
-    }
-
-    .food-section {
-        overflow: hidden;
-    }
-
-    .bacon-image {
-        float: right;
-        width: 40%;
-        max-width: 300px;
-        margin: 0 0 15px 15px;
-        border: 1px solid var(--highlight-color);
-    }
-
-    .footnote {
-        font-style: italic;
-        text-align: right;
-        margin-top: 20px;
-        font-size: 0.9em;
-        color: #bdc3c7; /* Light gray for footnote */
-    }
-
-    .metrics {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 15px;
-    }
-
-    .metric {
-        flex-basis: calc(33% - 10px);
-        text-align: center;
-        margin-bottom: 10px;
-        background-color: rgba(52, 152, 219, 0.1); /* Slight blue tint */
-        padding: 10px;
-        border: 1px solid var(--highlight-color);
-    }
-
-    .metric-value {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: var(--highlight-color);
-    }
-
-    @media (max-width: 600px) {
-        .bacon-image {
-            float: none;
-            width: 100%;
-            max-width: 100%;
-            margin: 0 0 15px 0;
-        }
-    }
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
     
+        body {
+            font-family: 'Roboto Mono', monospace;
+            line-height: 1.6;
+            color: #a4beca;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #001100;
+            background-image: 
+                linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    
+        h1, h2, h3, h4 {
+            color: #00ff00;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .quote {
+            font-style: italic;
+            color: #7ca08d;
+            border-left: 3px solid #00ff00;
+            padding-left: 10px;
+            margin: 20px 0;
+        }
+    
+        .cta {
+            display: inline-block;
+            background-color: #013f3a;
+            color: #00ff00;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-top: 20px;
+            border: 1px solid #00ff00;
+            transition: all 0.3s ease;
+        }
+    
+        .cta:hover {
+            background-color: #00ff00;
+            color: #013f3a;
+        }
+    
+        .growth-area {
+            background-color: rgba(1, 63, 58, 0.3);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #00ff00;
+            overflow: hidden;
+        }
+    
+        .keyhole-image-container {
+            width: 100%;
+            height: 300px; /* Increase this value to make it taller */
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+    
+        .keyhole-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 50%;
+        }
+    
+        .growth-area-content {
+            padding: 0 15px;
+        }
+    
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            font-size: 12px;
+            color: #00ff00;
+            margin: 20px 0;
+        }
+    
+        ul {
+            padding-left: 20px;
+        }
+    
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+    
+      
     
     
     
@@ -192,10 +142,15 @@
 
     <h2>We realize this plan By GROWING:</h2>
 
-    <div class="growth-area food-section">
+
+<div class="growth-area food-section">
+    <div class="keyhole-image-container">
+        <img src="images/Bacon.jpg" alt="MyBacon being cooked" class="keyhole-image">
+        <div class="keyhole-overlay"></div>
+    </div>
+    <div class="growth-area-content">
         <h3>Food</h3>
-        <img src="/Bacon.jpg" alt="MyBacon being cooked" class="bacon-image">
-        
+
         <h4>Market Validation: MyBacon is 10x Better than the next best*</h4>
         <ul>
             <li><strong>Distribution:</strong> 800+ stores and growing</li>
@@ -227,47 +182,78 @@
             <li>Expanding to West Coast markets with frozen distribution</li>
         </ul>
 
-        <p class="footnote">* We sell 3x as fast at 2x the price as an organic whole cut farm to table product</p>
+        <p>* We sell 3x as fast at 2x the price as an organic whole cut farm to table product</p>
 
         <a href="https://www.myforestfoods.com" class="cta">EXPLORE MYFOREST FOODS</a>
     </div>
+</div>
 
 <div class="growth-area fashion-section">
-    <h3>Fashion & Textiles: Forager</h3>
-    <img src="/Forager-hide.jpg" alt="Forager mycelium hide" class="forager-image">
-    <h4>Market Validation: Leather like feel, performance, and nature, without the animal*</h4>
-    <ul>
-        <li><strong>Partnerships:</strong> Collaborations with leading luxury brands who have together invested over $20 million and counting in the development of mass market ready Forager hides and Foams</li>
-        <li><strong>Key Applications:</strong> Handbags, footwear, accessories, and apparel</li>
-        <li><strong>Performance:</strong> Customizable textures and finishes to meet any design need</li>
-        <li><strong>2024 Production Capacity:</strong> 100,000 sq ft</li>
-        <li><strong>Expected Terminal Margin:</strong> 60%+</li>
-    </ul>
-    <h4>Nature's Next-Gen Material: Low Footprint, Versatile, High-Performance</h4>
-    <ul>
-        <li><strong>Leather Like Materials:</strong> Premium mycelium-based hides for high-end fashion through everdday wear</li>
-        <li><strong>Performance Materials:</strong> High-performance foams for sportswear and protective gear</li>
-        <li><strong>Technical Textiles:</strong> Breathable fabrics for outdoor and athletic wear</li>
-        <li><strong>Niche Applications:</strong> Compostable earplugs, biodegradable insulation for outdoor apparel</li>
-    </ul>
-    <h4>Production Milestones:</h4>
-    <ul>
-        <li>Current production: 25,000 sq ft in 2024</li>
-        <li>2025 target: 250,000 sq ft</li>
-        <li>Expanding capacity with vertical farms, tannery partnerships, and downstream integration</li>
-    </ul>
-    <h4>Market Performance:</h4>
-    <ul>
-        <li>1/2 the Co2 footprint of conventional leather at current scale</li>
-        <li>Customizable properties through programable mycelelium growth</li>
-        <li>Expanding from luxury to premium and mass market applications</li>
-    </ul>
-    <p>Forager combines the performance of leather with the sustainability of mycelium, offering a versatile, eco-friendly alternative</p>
-    
-    <p class="footnote">* We grow sheets of meat like mycelium skin we naturally tan and preserve</p>
-    
-    <a href="https://www.forager.bio" class="cta">DISCOVER FORAGER</a>
+    <div class="keyhole-image-container">
+        <img src="images/bag.MOV" alt="Forager mycelium hide" class="keyhole-image">
+        <div class="keyhole-overlay"></div>
+    </div>
+
+    <div class="growth-area-content">
+        <h3>Fashion & Textiles: Forager</h3>
+        <h4>Market Validation: Leather like feel, performance, and nature, without the animal*</h4>
+        <ul>
+            <li><strong>Partnerships:</strong> Collaborations with leading luxury brands who have together invested over $20 million and counting in the development of mass market ready Forager hides and Foams</li>
+            <li><strong>Key Applications:</strong> Handbags, footwear, accessories, and apparel</li>
+            <li><strong>Performance:</strong> Customizable textures and finishes to meet any design need</li>
+            <li><strong>2024 Production Capacity:</strong> 100,000 sq ft</li>
+            <li><strong>Expected Terminal Margin:</strong> 60%+</li>
+        </ul>
+        <h4>Nature's Next-Gen Material: Low Footprint, Versatile, High-Performance</h4>
+        <ul>
+            <li><strong>Leather Like Materials:</strong> Premium mycelium-based hides for high-end fashion through everdday wear</li>
+            <li><strong>Performance Materials:</strong> High-performance foams for sportswear and protective gear</li>
+            <li><strong>Technical Textiles:</strong> Breathable fabrics for outdoor and athletic wear</li>
+            <li><strong>Niche Applications:</strong> Compostable earplugs, biodegradable insulation for outdoor apparel</li>
+        </ul>
+        <h4>Production Milestones:</h4>
+        <ul>
+            <li>Current production: 25,000 sq ft in 2024</li>
+            <li>2025 target: 250,000 sq ft</li>
+            <li>Expanding capacity with vertical farms, tannery partnerships, and downstream integration</li>
+        </ul>
+        <h4>Market Performance:</h4>
+        <ul>
+            <li>1/2 the Co2 footprint of conventional leather at current scale</li>
+            <li>Customizable properties through programable mycelelium growth</li>
+            <li>Expanding from luxury to premium and mass market applications</li>
+        </ul>
+        <p>Forager combines the performance of leather with the sustainability of mycelium, offering a versatile, eco-friendly alternative</p>
+        
+        <p class="footnote">* We grow sheets of meat like mycelium skin we naturally tan and preserve</p>
+        
+        <a href="https://www.forager.bio" class="cta">DISCOVER FORAGER</a>
+    </div>
 </div>
+</div>
+
+<div class="growth-area">
+    <div class="keyhole-image-container">
+        <img src="images/weaving.gif" alt="Mycelium weaving process" class="keyhole-image">
+    </div>
+    <h3>Mycelium Foundry: Orchestrating Material Abundance</h3>
+    <h4>Revolutionizing Material Science with Mycelium:</h4>
+    <ul>
+        <li><strong>Advanced Composites:</strong> Lightweight, durable materials for construction and aerospace</li>
+        <li><strong>Bioplastics:</strong> Biodegradable alternatives to traditional plastics</li>
+        <li><strong>Filtration Systems:</strong> High-performance mycelium-based filters for air and water purification</li>
+        <li><strong>Acoustic Materials:</strong> Sound-absorbing panels for architecture and automotive industries</li>
+    </ul>
+    <h4>Research & Development:</h4>
+    <ul>
+        <li>Collaborations with fortune 500 companies and leading research institutions</li>
+        <li>Ongoing material optimization for strength, flexibility, and sustainability</li>
+        <li>Exploration of novel mycelium strains for specialized applications</li>
+    </ul>
+    <p>The Mycelium Foundry is our hub for innovation, where we transform mycelium into groundbreaking materials that address global challenges.</p>
+    <a href="#" class="cta">EXPLORE MYCELIUM FOUNDRY</a>
+</div>
+
 
 
     <div class="growth-area">
@@ -307,6 +293,24 @@
         </ul>
         <a href="#" class="cta">DISCOVER GROW.BIO</a>
     </div>
+    
+    <div class="growth-area">
+        <h3>Creating Material Abundance</h3>
+        <div class="quote">
+            "Any sufficiently advanced technology is indistinguishable from magic." - Arthur C. Clarke
+        </div>
+        <ul>
+            <li>Biology represents our most advanced technology</li>
+            <li>Mycelium is uniquely tamable as living technology</li>
+            <li>We use mycelium to create material abundance</li>
+            <li>Technological abundance is the fuel for capitalism</li>
+            <li>We believe by harnessing biology we can create positive feedback loops, accelerating biological technology, creating everyday abundance for those on spaceship Earth, in food, clothing, housing, medicine, and computation, at less cost to Earth than ever before</li>
+            <li>We believe, as Buckminster Fuller told us, that we are the technicians of spaceship Earth, and this is our duty</li>
+        </ul>
+    </div>
+
+
+
     
     <div class="growth-area">
         <h3>Scale</h3>
